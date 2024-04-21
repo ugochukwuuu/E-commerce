@@ -1,10 +1,26 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 *,
 *::before,
 *::after{
     margin:0;
     padding:0;
     box-sizing: border-box;
+}
+:root{
+    --dark-green: #006400;
+    --light-green: #90ee90;
+    --lightest-green: #dffdd3;
+    --white: white;
+    --grey: grey;
+    --egg-white: #d2d2d2;
+}
+a{
+    color: var(--dark-green);
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
 }
 body{
     min-height: 100vh;
@@ -13,6 +29,9 @@ main{
     display: flex;
     flex-direction: row;
 }
+a,p,button{
+    font-family: "Raleway", sans-serif;
+}
 .left-div{
     display: flex;
     flex-direction: column;
@@ -20,12 +39,91 @@ main{
     justify-content: center;
     min-height: 100vh;
     flex: 1;
+    background-color: var(--lightest-green)
 }
 .right-div{
-    background-color: black;
+    background-color: var(--dark-green);
     height: 100vh;
     flex: 1;
 }
+.enroll{
+    flex-basis: 50%;
+    padding: .5em 0;
+}
+.ld-wrapper{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ld-wrapper h2{
+    font-size: 2em;
+    font-family: "Playfair Display", serif;
+    line-height: 3em;
+}
 .tech-companies-wrapper{
-    background-color: black;
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+.email-form{
+    width: 100%;
+    text-align: center;
+}
+.line-text{
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2em;
+}
+.line-text span{
+    /* width: 100%; */
+    flex: 1;
+    display: inline-block;
+    margin-bottom: 5px;
+    border-bottom: 1px solid var(--egg-white); 
+    /* background-color: black; */
+}
+.ef-input{
+    display: flex;
+    gap: .85em;
+    flex-direction: column;
+    margin-bottom: .85em;
+}
+.ef-input input{
+    font-weight: bold;
+}
+.ef-input input,.create,.tech-companies-wrapper button{
+    padding: .9em ;
+}
+.ef-row2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.65em;
+}
+.ef-row2 input{
+    accent-color: var(--dark-green);
+}
+button,input{
+    background-color: transparent;
+    border: 2px solid var(--egg-white);
+    border-radius: 3px;
+}
+.create{
+    width: 100%;
+    margin-bottom: 1em;
+    background-color: var(--dark-green);
+    color: var(--lightest-green);
+    border: none;
+}
+.ef-input input:focus{
+    border: none;
+    outline: 2px solid var(--dark-green);
+    /* background-color: var(--light-green); */
+    color: var(--dark-green);
 }
