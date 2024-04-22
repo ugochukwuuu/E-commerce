@@ -14,6 +14,11 @@
     --white: white;
     --grey: grey;
     --egg-white: #d2d2d2;
+
+    /* sizes */
+
+    --pa:.9em;
+    --br-a:3px;
 }
 a{
     color: var(--dark-green);
@@ -70,6 +75,14 @@ a,p,button{
     justify-content: center;
     margin-bottom: 1em;
 }
+.tech-companies-wrapper button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tech-companies-wrapper button img{
+    width:1.5em;
+}
 .email-form{
     width: 100%;
     text-align: center;
@@ -98,8 +111,11 @@ a,p,button{
 .ef-input input{
     font-weight: bold;
 }
+.ef-input input:placeholder-shown{
+    font-weight: lighter;
+}
 .ef-input input,.create,.tech-companies-wrapper button{
-    padding: .9em ;
+    padding: var(--pa) ;
 }
 .ef-row2{
     display: flex;
@@ -112,7 +128,7 @@ a,p,button{
 button,input{
     background-color: transparent;
     border: 2px solid var(--egg-white);
-    border-radius: 3px;
+    border-radius: var(--br-a);
 }
 .create{
     width: 100%;
@@ -126,4 +142,20 @@ button,input{
     outline: 2px solid var(--dark-green);
     /* background-color: var(--light-green); */
     color: var(--dark-green);
+}
+
+/* Sign up design */
+.full-name-field{
+    width:100%;
+    display: flex;
+    gap: 1em ;
+    margin-bottom: .9em;
+}
+.full-name-field input{
+    /* background-color: black ; */
+    padding: var(--pa);
+    width:100%;
+}
+.signupPage .ef-row2{
+    justify-content: center;
 }
