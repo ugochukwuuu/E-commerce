@@ -1,25 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-*,
-*::before,
-*::after{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-:root{
-    --dark-green: #006400;
-    --light-green: #90ee90;
-    --lightest-green: #dffdd3;
-    --white: white;
-    --grey: grey;
-    --egg-white: #d2d2d2;
-
-    /* sizes */
-
-    --pa:.9em;
-    --br-a:3px;
-}
+/* this is the stylesheet for the sign-in and login page */
+@import url("root.css");
 a{
     color: var(--dark-green);
     text-decoration: none;
@@ -81,7 +61,7 @@ a,p,button{
     justify-content: center;
 }
 .tech-companies-wrapper button img{
-    width:1.5em;
+    width:1.2em;
 }
 .email-form{
     width: 100%;
@@ -161,62 +141,3 @@ button,input{
 }
 
 /* home page styling */
-:root{
-    --home-page-pl: 4em;
-}
-.home-page{
-    flex-direction: column;
-}
-.home-page nav{
-    display: flex;
-    width: 100% ;
-    padding: 1em var(--home-page-pl);
-    font-weight: 500;
-    margin-bottom: 3em;
-}
-.home-page nav ul {
-    display: flex;
-    gap: 1em;
-    list-style-type: none;
-}
-.home-page nav .logo{
-    margin-right: 3em;
-}
-.entry{
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
-.entry .login{
-    background-color: var(--dark-green);
-    border: none;
-    padding: .75em;
-    border-radius: 25px;
-}
-.entry .login a{
-    color:var(--lightest-green);
-}
-.hero-section{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0 var(--home-page-pl);
-}
-.hero-section h1{
-    font-size: 7em ;
-    color: var(--dark-green);
-}
-.hero-section .left-col{
-    flex: 1;
-}
-.hero-section .right-col{
-    flex: 1;
-}
-.hero-section button{
-    background-color: var(--dark-green);
-    /* color: var(--dark-green); */
-    color: white;
-    padding: 1em 1.2em;
-    border-radius: 3em;
-}
