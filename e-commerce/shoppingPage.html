@@ -6,6 +6,8 @@
     <title>Home Page</title>
 
     <link rel="stylesheet" href="shoppingPage.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -23,24 +25,38 @@
             <div class="nav-right">
                 <div class="product-search-div">
                     <input type="search" id="search" class="search-input" placeholder="Search Product...">
-                    <label for="search"><img class="searchIcon" src="/e-commerce/Assets/searchIcon.png" alt="ab"></img>
+                    <label for="search"><span class="material-symbols-outlined searchIcon">
+                        search
+                        </span>
                     </label>
                 </div>
 
                 <a href="signupPage.html" class="userbased-pages">
-                    <img class="pageIcon profileIcon" src="/e-commerce/Assets/profileIcon.png" alt="ab"></img>
+                    
+                        <span class="material-symbols-outlined">
+                            person
+                            </span>
+                    <!-- <img class="pageIcon profileIcon" src="/e-commerce/Assets/profileIcon.png" alt="ab"></img> -->
                     Account</a>
                 <a href="cartPage.html" class="userbased-pages">
-                    <img class="pageIcon cartIcon" src="/e-commerce/Assets/cartIcon.png" alt="ab"></img>
+                    <!-- <img class="pageIcon cartIcon" src="/e-commerce/Assets/cartIcon.png" alt="ab"></img> -->
+                    <span class="material-symbols-outlined">
+                        shopping_cart
+                        </span>
                     Cart</a>
             </div>
         </nav>
 
         <div class="hero-section">
             <div class="texts">
-                <div class="discount-tag">
+                <p class="discount-tag">
                     WEEKLY DISCOUNT
-                </div>
+                </p>
+
+                <p class="header">UP TO 80% DISCOUNT ON APPLIANCES♻</p>
+                <p class="lorem" >It's Electri-week⚡Cut down 80% of the price of any appliances that suit you. <span>Hurry offer ends in 3 days⏳</span>
+                </p>
+                <button class="dormant">Shop Now</button>
             </div>
         </div>
 

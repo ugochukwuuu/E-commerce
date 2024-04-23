@@ -35,7 +35,6 @@ ul{
     margin-right: 2em;
 }
 .nav-right{
-    width:100%;
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -55,6 +54,7 @@ ul{
     border: none;
     background-color: inherit;
     border-radius: inherit;
+    font-family: "Raleway", sans-serif;
 }
 .product-search-div input:focus{
     outline:none;
@@ -62,7 +62,6 @@ ul{
 }
 .searchIcon{
     width: 1.5em;
-    margin-right: 1em;
     cursor: pointer;
 }
 .userbased-pages{
@@ -70,17 +69,59 @@ ul{
     align-items: center;
     gap: .5em;
 }
-.profileIcon{
+/* .profileIcon{
     width: 1.3em;
 }
 .cartIcon{
     width: 1.75em;
+} */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 .hero-section{
-    width: 100%;
     background-color: var(--lightest-green);
     border-radius: var(--br-b);    
+    padding: 2em;
+}
+.hero-section .texts{
+    display: flex;
+    gap:1em;
+    flex-direction: column;
+    align-items: baseline;
 }
 .discount-tag{
-    padding: 2em;
+    background-color: var(--gold);
+    padding: .8em;
+    font-size: .6rem;
+    border-radius: var(--br-d);
+}
+.hero-section h1, p{
+    color: var(--dark-green);
+}
+.hero-section .header{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.2rem;
+}
+.lorem{
+    font-size: 1.22rem;
+    line-height: 1.4;
+}
+.lorem span{
+    display: block;
+}
+.dormant{
+    padding: .4em 1.2em;
+    background-color: var(--dark-green);
+    border: none;
+    color: var(--lightest-green);
+    border-radius: var(--br-a);
+    line-height: 2;
+    cursor: pointer;
 }
