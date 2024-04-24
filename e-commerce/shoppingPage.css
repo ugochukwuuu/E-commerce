@@ -83,9 +83,15 @@ ul{
   'opsz' 24
 }
 .hero-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: var(--lightest-green);
     border-radius: var(--br-b);    
-    padding: 2em;
+    padding: 1em 3em;
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 5em;
 }
 .hero-section .texts{
     display: flex;
@@ -95,8 +101,9 @@ ul{
 }
 .discount-tag{
     background-color: var(--gold);
-    padding: .8em;
+    padding: .5em .8em ;
     font-size: .6rem;
+    font-weight: 600;
     border-radius: var(--br-d);
 }
 .hero-section h1, p{
@@ -110,8 +117,8 @@ ul{
     font-size: 3.2rem;
 }
 .lorem{
-    font-size: 1.22rem;
-    line-height: 1.4;
+    font-size: 1.2rem;
+    line-height: 1.2;
 }
 .lorem span{
     display: block;
@@ -124,4 +131,50 @@ ul{
     border-radius: var(--br-a);
     line-height: 2;
     cursor: pointer;
+}
+.img-wrapper img{
+    width: 440px;
+}
+.products-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2.5em;
+}
+.product{
+    color: var(--dark-green);
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* align-items: last baseline; */
+    gap: .5em;
+}
+.product-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-ratings{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filled {
+    color: var(--gold);
+  }
+.add-to-cart{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: .4em .9em;
+    font-size: .8rem;
+    border-radius: var(--br-d);
+    cursor: pointer;
+    line-height: 1.2;
+    align-self: first baseline ;
+}
+.add-to-cart:hover{
+    background-color: var(--dark-green);
+    color: var(--lightest-green); 
+    border: none;  
 }
