@@ -137,16 +137,35 @@ ul{
 }
 .products-wrapper{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    /* grid-auto-columns: minmax(1rem, auto); */
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
     gap: 2.5em;
 }
 .product{
-    color: var(--dark-green);
+    /* color: var(--dark-green); */
     font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
-    /* align-items: last baseline; */
     gap: .5em;
+}
+.product-img{
+    background-color: var(--lightest-green);
+    border-radius: var(--br-b);
+    position: relative;
+    aspect-ratio: 1/1;
+    padding: 1.5em;
+    /* display: flex; */
+    background-image: url("/e-commerce/Assets/fridge.png");
+    background-position: center;
+    background-size: 85%;
+    background-repeat: no-repeat;
+
+}
+.favorite-icon{
+    float: right;
+}
+.product-img img{
+    width: 100%;
 }
 .product-details{
     display: flex;
@@ -154,7 +173,6 @@ ul{
     align-items: center;
     justify-content: space-between;
 }
-
 .product-ratings{
     display: flex;
     flex-direction: row;
@@ -166,7 +184,7 @@ ul{
 .add-to-cart{
     background-color: transparent;
     border: 1px solid black;
-    padding: .4em .9em;
+    padding: .6em 1.2em;
     font-size: .8rem;
     border-radius: var(--br-d);
     cursor: pointer;
@@ -176,5 +194,5 @@ ul{
 .add-to-cart:hover{
     background-color: var(--dark-green);
     color: var(--lightest-green); 
-    border: none;  
+    border: 1px solid var(--dark-green);  
 }
