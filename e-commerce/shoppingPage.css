@@ -15,9 +15,39 @@ a{
 }
 ul{
     list-style-type: none;
-
+    
     display: flex;
     gap: 1em;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.not-filled {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.add-to-cart-btn {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 .shopping-page nav{
     display: flex;
@@ -75,13 +105,7 @@ ul{
 .cartIcon{
     width: 1.75em;
 } */
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
+
 .hero-section{
     display: flex;
     flex-direction: row;
@@ -138,7 +162,7 @@ ul{
 .products-wrapper{
     display: grid;
     /* grid-auto-columns: minmax(1rem, auto); */
-    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(16%, 1fr));
     gap: 2.5em;
 }
 .product{
@@ -146,7 +170,7 @@ ul{
     font-family: "Raleway", sans-serif;
     display: flex;
     flex-direction: column;
-    gap: .5em;
+    gap: .7em;
 }
 .product-img{
     background-color: var(--lightest-green);
@@ -155,41 +179,56 @@ ul{
     aspect-ratio: 1/1;
     padding: 1.5em;
     /* display: flex; */
-    background-image: url("/e-commerce/Assets/fridge.png");
     background-position: center;
     background-size: 85%;
     background-repeat: no-repeat;
 
+    /* margin-bottom: .5em; */
+}
+.kingsOil{
+    background-image: url("/e-commerce/Assets/productsImage/kingsOil.png");
+}
+.indomie70g{
+    background-image: url("/e-commerce/Assets/productsImage/Indomie70g.png");
 }
 .favorite-icon{
     float: right;
 }
-.product-img img{
-    width: 100%;
-}
+
 .product-details{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+.product-name{
+    font-weight: 800;
+}
 .product-ratings{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+.product-ratings span{
+    width: 1em;
+}
 .filled {
     color: var(--gold);
+    size: 1em;
   }
 .add-to-cart{
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid var(--dark-green);
     padding: .6em 1.2em;
     font-size: .8rem;
-    border-radius: var(--br-d);
+    border-radius: var(--br-a);
     cursor: pointer;
-    line-height: 1.2;
-    align-self: first baseline ;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4em;
+    /* align-self: first baseline ; */
 }
 .add-to-cart:hover{
     background-color: var(--dark-green);
